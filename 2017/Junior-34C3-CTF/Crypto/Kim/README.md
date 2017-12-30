@@ -27,12 +27,12 @@ def download(umac):
         return redirect('/files/' + mac('f=dont.gif') + '/?f=dont.gif')
 ```
 
-Setelah menganalisa ternyata didapatkan 3 buah file pada directory files/`http://35.198.133.163:1337/files/`
+Setelah menganalisa ternyata didapatkan 3 buah file pada `http://35.198.133.163:1337/files/`
 * sample.gif
 * dont.gif
 * flag
 
-Ternyata didapatkan fungsi untuk generate umac vulnerable terhadap karena memakai sha1 untuk [Length Extension Attack](https://en.wikipedia.org/wiki/Length_extension_attack)
+Ternyata didapatkan fungsi untuk generate umac vulnerable terhadap [Length Extension Attack](https://en.wikipedia.org/wiki/Length_extension_attack)
 
 ```python
 def mac(msg):
