@@ -1,4 +1,4 @@
-# 34C3 CTF 2017: JuniorCTF - Kim
+# 34C3 CTF 2017: JuniorCTF - babybash
 
 **Category:** Miscellaneous
 **Description:**
