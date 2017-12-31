@@ -4,6 +4,7 @@
 **Description:**
 
 > This is an useful [service](http://35.197.205.153/) to unzip some files.
+>
 > We added a [flag](http://35.197.205.153/flag.php) for your convenience.
 
 ## Write-up
@@ -63,7 +64,8 @@ if(!empty($_FILES['uploaded_file'])) {
 ?> 
 ```
 
-Ketika kita mengupload sebuah file zip maka akan unzip pada server dan file hasil extract akan dipindahkan ke `http://url/uploads/upl+uniqid`
+Ketika kita mengupload sebuah file zip maka akan unzip pada server dan file hasil extract akan dipindahkan ke 
+`http://url/uploads/upl+uniqid`
 
 ![Screenshot](test.png)
 
@@ -76,7 +78,7 @@ perintah dasarnya seperti ini
 $ ln -s /path/to/file /path/to/symlink
 ```
 
-Arahkan symlink ke flag.php yang letaknya berada pada `http://url/flag.php` sedengkan file kita berada pada `http://url/uploads/upl+uniqid`, sehingga kita harus naik 2 directory
+Arahkan symlink ke flag.php yang letaknya berada pada `http://url/flag.php` sedangkan file kita berada pada `http://url/uploads/upl+uniqid`, sehingga kita harus naik 2 directory
 
 ```bash
 $ ln -s ../../flag.php sebuah_file
